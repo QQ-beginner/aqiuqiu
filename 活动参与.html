@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<style>
+	body{
+			margin: 0px;
+	background-color: #0A0909;
+		}
+		.div1{
+			margin: 0px;
+			padding: 0px 2px;
+			position: fixed;
+			z-index: 6;
+			color: white;
+		}
+		span{
+			float: right;
+		}
+		.clock{
+			width: 20px;
+			height: 20px;
+		}
+		.house{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 100px;
+		}
+		.ok{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.lihua{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.train{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.see{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.iframe1{
+			width: 100%;
+			height: 600px;
+			
+			display: block;
+			position: relative;
+			top: 85px;}
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin:0px;
+			background-color:#A4A2BD;
+			position: fixed;
+			width: 100%;
+			overflow: hidden;
+			top: 0;
+			margin: 50px 0px;
+			opacity: 0.8;
+			z-index: 5;
+				
+			
+		}
+		li{
+			width: 20%;
+			 
+			float: left;
+				
+		}
+		li a{
+			display: block;
+			color: white;
+			padding: 8px 10px;
+			text-decoration: none;
+			text-align: center;
+			
+		}
+		
+}
+		
+		li:last-child{
+		
+			border-right: none;
+		}
+		li a:hover{
+			background-color: aliceblue;
+			color: black;
+		}
+		
+		
+		
+		
+		#iframe{
+			position: relative;
+			width: 1000px;
+			height: 500px;
+			margin: 0 auto;
+			
+		}
+		
+		#imgId{
+			padding: 150px;
+		}
+		
+		hr{
+			width: 100%;
+			margin:200px 0px 0px 0px;
+		
+		}
+.footer{
+			 clear: both;
+    display: block;
+    text-align: center;	
+    margin: 0px auto;
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+	color: white;
+  
+			
+		}
+		.wechat{
+			width: 30px;
+			position: fixed;
+			bottom: 300px;
+			margin: 5px;
+			z-index: 1;
+		}
+		.wechat:hover{
+			content: url("二维码.png");
+			width: 90px;
+		}
+			.grid-container{
+				position: relative;
+				top: -20px;
+			display: grid;
+			width: 100%;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-rows: 400px 50px 300px;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+		<!--表头-->
+	<div id="div">
+	<div class="div1"><h3>球球的小屋｜个人网站       
+		
+		<span id="time"></span>  
+		<span>
+			<img src="小闹钟.png" class="clock"></span></div></h3>  </div>
+	
+	<!--导航栏-->
+	<ul>
+		<li><img src="房子标志.png" class="house">
+			<a href="网页设计.html" target="_self">主页</a></li>
+		<li><img src="话筒.png" class="ok"><a class="active" href="个人简介.html" onClick="activ()">个人介绍</a></li>
+		<li><img src="礼花.png" class="lihua"><a href="活动参与.html" target="_self"> 活动经历</a></li>
+		<li><img src="火车黑白.png" class="train"><a href="旅行.html" target="_self"> 旅行</a></li>
+		<li><img src="望远镜.png" class="see"><a href="未来展望.html" target="_self"> 未来展望</a></li>
+		</ul>
+	<img src="微信标志.jpeg" alt="" class="wechat">
+	<div id="iframe">
+		 <div id = "main"></div>
+	<img src="活动1.JPG" alt="活动照片" height="500" id="imgId" style="display: block;margin: auto">
+</div>
+	<hr align="center">
+		<div class="footer">designed and developed by Qiu Qiu</div>
+	
+	
+		<script type="text/javascript">
+	setInterval(function(){
+		var dd=new Date();
+		var h=dd.getHours();
+		var mi=dd.getMinutes();
+		var s=dd.getSeconds();
+		var str=h+":"+mi+":"+s+"&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+		document.getElementById("time").innerHTML=str;
+	},1000);//时间
+			
+			
+			window.onload=function(){
+			setInterval(step,2000);
+			var num=1;
+			function step(){
+				if (num<7){
+					num++;
+				}
+				else{
+					num=1;
+				}
+				var dom=document.getElementById("imgId");
+				dom.src='活动'+num+'.JPG';
+			}
+		}
+	</script>
+</body>
+</html>

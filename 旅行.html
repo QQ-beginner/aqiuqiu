@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <meta name="description" content="裘虬的个人网站主页">
+<title>裘虬的旅行</title>
+	<style>
+		body{
+			margin: 0px;
+		
+			
+		}
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin:0px;
+			background-color:#A4A2BD;
+			position: fixed;
+			width: 100%;
+			overflow: hidden;
+			top: 0;
+			margin: 50px 0px;
+			opacity: 0.8;
+			z-index: 5;
+				
+			
+		}
+		li{
+			width: 20%;
+			 
+			float: left;
+				
+		}
+		li a{
+			display: block;
+			color: white;
+			padding: 8px 10px;
+			text-decoration: none;
+			text-align: center;
+			
+		}
+		
+}
+		
+		li:last-child{
+		
+			border-right: none;
+		}
+		li a:hover{
+			background-color: aliceblue;
+			color: black;
+		}
+		
+		#div{
+			background-color:white;
+			height: 150px;
+			
+		}
+		.div1{
+			margin: 0px;
+			padding: 0px 2px;
+			position: fixed;
+			z-index: 6;
+		}
+		span{
+			float: right;
+		}
+		.clock{
+			width: 20px;
+			height: 20px;
+		}
+		.house{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 100px;
+		}
+		.ok{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		
+		.lihua{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.train{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.see{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		
+		
+	    body{
+		    height: 1000px;
+	    }
+	   #btn{
+		   position:fixed;bottom:300px;right: 20px;display: none;
+		z-index: 1;}
+		.wechat{
+			width: 30px;
+			position: fixed;
+			bottom: 500px;
+			margin: 5px;
+			z-index: 1;
+		}
+		.wechat:hover{
+			content: url("二维码.png");
+			width: 90px;
+		}
+			.column {
+  float: left;
+  padding: 10px;
+}
+		#header{
+			width: 80%;
+			margin: auto;
+			border: 2px solid #CBC4E9;
+			border-radius: 25px;
+			height: 400px;
+			background-color:#A4A2BD;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.word{
+			margin: 40px 40px;
+			color:#EFDF38;
+		}
+		#iframe{
+			position: relative;
+			top:-400px;
+			right: -150px;
+			
+		}
+		
+		#imgId{
+			padding: 150px;
+			
+		}
+		.grid-container{
+			display: grid;
+			width: 100%;
+			background-color:#A4A2BD;
+			grid-template-columns: 33.3% 33.3% 33.3%;
+			grid-template-rows: auto;
+			padding: 10px;
+			position: relative;
+			top: -350px;
+		}
+		.grid-item{
+			background-color:#A4A2BD;
+			border-right: 1px solid white;
+			padding: 20px;
+			text-align: center;
+		}
+		.grid-item3{
+			border-right: 0;
+		}
+		
+		.active{
+			position: relative;
+			animation-name: mytrain;
+			animation-duration: 5s;
+			animation-timing-function: linear;
+			animation-delay: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-play-state: running;
+			-webkit-animation-name:mytrain;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
+		}
+		@keyframes mytrain{
+			0%{
+				left: 0px;top: 0px;
+			}
+			100%{
+				left:300px; top: 0px;
+			}
+		}
+		@-webkit-keyframes mytrain{
+			0%{
+				left: 0px;top: 0px;
+			}
+			100%{
+				left:300px; top: 0px;
+			}
+		}
+</style>
+</head>
+	
+
+<body>
+	<!--表头-->
+	<div id="div">
+	<div class="div1"><h3>球球的小屋｜个人网站       
+		
+		<span id="time"></span>  
+		<span>
+			<img src="小闹钟.png" class="clock"></span></div></h3>  
+	
+	<!--导航栏-->
+	<ul>
+		<li><img src="房子标志.png" class="house">
+			<a href="网页设计.html" target="_self">主页</a></li>
+		<li><img src="话筒.png" class="ok"><a class="active1" href="个人简介.html" target="_self">个人介绍</a></li>
+		<li><img src="礼花.png" class="lihua"><a href="活动参与.html" target="_self"> 活动经历</a></li>
+		<li><img src="火车黑白.png" class="train"><a href="旅行.html" target="self"> 旅行</a></li>
+		<li><img src="望远镜.png" class="see"><a href="未来展望.html" target="_self"> 未来展望</a></li>
+	</ul>
+	</div>
+	
+	<div id="header">
+	<div class="word">
+		<h1>身未动,心已远</h1>
+		<p>我是一个爱玩、爱拍照的女子，曾经有个梦想是一个相机仗剑走天涯</p>
+		<p>生活是一个围城，让自己快乐的方式不一定只有跳出围城这一个选择</p>
+		<p>或许在城中走一走也会有意想不到的收获。</p>
+		<p>或许我们永远不会相遇，但我们去过同一个城市，吻过同一片夕阳，</p>
+		<p>我们就是朋友啦！</p>	
+		<span>
+		<div id="iframe">
+	<img src="旅行1.JPG" alt="旅行照片" height="300" id="imgId" style="display: inline-block;">
+</div>
+		</span>
+		</div>
+	</div>
+	<div class="active"> <img src="小火车.png" width="200px"></div>
+	
+	<br>
+	<div class="grid-container">
+  <div class="grid-item">
+		<div>
+	  <a href="http://zz2.ycxqly.top:3115/html/ade84d3e_pc.html?bd_vid=7639294012259149916" target="_blank"><img src="重庆.jpg" style="width: 300px;"></a>
+			<p style="color: #EFDF38">这是一幅流动的画,这是一帧立体的景,这是一曲迷人的交响乐，这是最年轻的直辖市，这是重庆</p>
+			<img src="箭头.png" width="20px"><br>点击图片，有攻略哦
+	  </div>
+		</div>
+  <div class="grid-item">
+		<div>
+	  <a href="http://ql.hzzhuyoug.com/67tpuaxj/index.html?keyword=厦门旅游&plan=【PC】厦旅&unit=厦门旅游词&e_matchtype=1&e_creative=39778039050&e_adposition=cl1&e_keywordid=177024727625&e_keywordid2=177024727625&bd_vid=8093978196193594936&kf_uid=1591162254172&kf_uid2=1591162254172&kf_n=yangyang" target="_blank";><img src="厦门.JPG" style="width: 250px; height: 150px"></a>
+			<p style="color: #EFDF38">你知道海边小镇的故事吗，厦门告诉你</p>
+			<span><img src="右箭头.png" width="20px"></span>
+			<img src="厦门2.JPG" style="width: 200px; height: 150px" >
+			<p style="color: #EFDF38">厦门是让我忍不住去两次的城市，她的美丽藏在每一抹海浪里</p>
+	  </div>
+		</div>
+  <div class="grid-item grid-item3">
+		<div>
+	 <a href="https://you.ctrip.com/sight/chongqing158/5014412.html?allianceid=866656&sid=1435004" target="_blank" ><img src="星空.JPG" style="width: 300px; height: 350px"></a><span style="color: #EFDF38">你不是梵高，但你有星空</span>
+			<img src="右箭头.png" width="20px">
+	  </div>
+		</div>  
+	<input type="button" name="" id="btn" value="回到顶部" />
+		<img src="微信标志.jpeg" alt="" class="wechat">
+	
+  
+
+	
+	
+	
+	
+	<script type="text/javascript">
+	setInterval(function(){
+		var dd=new Date();
+		var h=dd.getHours();
+		var mi=dd.getMinutes();
+		var s=dd.getSeconds();
+		var str=h+":"+mi+":"+s+"&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+		document.getElementById("time").innerHTML=str;
+	},1000);//时间
+		var btn=document.getElementById('btn')
+		//window.onscroll实时获取滚动条滚动的距离
+		window.onscroll=function(){
+			var st=document.documentElement.scrollTop//距离顶部的距离（滚动条滚动的距离）
+			console.log(st)
+			if(st>300){
+				btn.style.display="block"
+			}else{
+				btn.style.display="none"
+			}
+		}
+		//点击按钮回到顶部
+		btn.onclick=function(){
+			document.documentElement.scrollTop=0
+		}
+		window.onload=function(){
+			setInterval(step,2000);
+			var num=1;
+			function step(){
+				if (num<7){
+					num++;
+				}
+				else{
+					num=1;
+				}
+				var dom=document.getElementById("imgId");
+				dom.src='旅行'+num+'.JPG';
+			}
+		}
+	
+				
+	
+		
+		
+	</script>
+</body>
+	
+	
+</html>

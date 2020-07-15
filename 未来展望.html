@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <meta name="description" content="裘虬的个人网站主页">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<title>裘虬的个人介绍</title>
+	<style>
+		body{
+			margin: 0px;
+	background-image: url("背景图.jpg");
+		}
+		.div1{
+			margin: 0px;
+			padding: 0px 2px;
+			position: fixed;
+			z-index: 6;
+			color: white;
+		}
+		span{
+			float: right;
+		}
+		.clock{
+			width: 20px;
+			height: 20px;
+		}
+		.house{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 100px;
+		}
+		.ok{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.lihua{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.train{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.see{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.iframe1{
+			width: 100%;
+			height: 600px;
+			
+			display: block;
+			position: relative;
+			top: 85px;}
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin:0px;
+			background-color:#A4A2BD;
+			position: fixed;
+			width: 100%;
+			overflow: hidden;
+			top: 0;
+			margin: 50px 0px;
+			opacity: 0.8;
+			z-index: 5;
+				
+			
+		}
+		li{
+			width: 20%;
+			 
+			float: left;
+				
+		}
+		li a{
+			display: block;
+			color: white;
+			padding: 8px 10px;
+			text-decoration: none;
+			text-align: center;
+			
+		}
+		
+}
+		
+		li:last-child{
+		
+			border-right: none;
+		}
+		li a:hover{
+			background-color: aliceblue;
+			color: black;
+		}
+		 #main {
+    width: 80%;
+    height: 750px;
+    margin: auto;
+    padding: 10px;
+    line-height: 30px;
+    color: white;
+    font-size: 18px;
+			 position: relative;
+			 top: 150px;
+   }
+		hr{
+			width: 100%;
+			margin:-300px 0px 0px 0px;
+		
+		}
+.footer{
+			 clear: both;
+    display: block;
+    text-align: center;	
+    margin: 0px auto;
+    position: absolute;
+    bottom: 220px;
+    width: 100%;
+	color: black;
+  
+			
+		</style>
+</head>
+<body>
+
+	<div id="div">
+	<div class="div1"><h3>球球的小屋｜个人网站       
+		
+		<span id="time"></span>  
+		<span>
+			<img src="小闹钟.png" class="clock"></span></div></h3>  </div>
+	
+	<!--导航栏-->
+	<ul>
+		<li><img src="房子标志.png" class="house">
+			<a href="网页设计.html" target="_self">主页</a></li>
+		<li><img src="话筒.png" class="ok"><a class="active" href="个人简介.html" onClick="activ()">个人介绍</a></li>
+		<li><img src="礼花.png" class="lihua"><a href="活动参与.html" target="_self"> 活动经历</a></li>
+		<li><img src="火车黑白.png" class="train"><a href="旅行.html" target="_self"> 旅行</a></li>
+		<li><img src="望远镜.png" class="see"><a href="http://c.runoob.com/front-end/61" target="_blank"> 未来展望</a></li>
+		</ul>
+	<div id="main"></div>
+		
+		<div class="low">
+		<hr align="center">
+		<div class="footer">designed and developed by Qiu Qiu</div>
+		</div>
+		
+		<script type="text/javascript">
+	setInterval(function(){
+		var dd=new Date();
+		var h=dd.getHours();
+		var mi=dd.getMinutes();
+		var s=dd.getSeconds();
+		var str=h+":"+mi+":"+s+"&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+		document.getElementById("time").innerHTML=str;
+	},1000);//时间
+			
+			
+			
+			
+		var typeWriter = {
+    msg: function(msg){
+     return msg;
+    },
+    len: function(){
+     return this.msg.length;
+    },
+    seq: 0,
+    speed: 150,
+    type: function(){
+     var _this = this;
+     document.getElementById("main").innerHTML = _this.msg.substring(0, _this.seq);
+     if (_this.seq == _this.len()) {
+      _this.seq = 0;
+       clearTimeout(t);
+     }
+     else {
+      _this.seq++;
+      var t = setTimeout(function(){_this.type()}, this.speed);
+     }
+    }
+   }
+   window.onload = function(){
+    var msg = "我总爱畅想未来的日子，时间其实很快，我可以风平浪静的度过，我可以找一份不咸不淡的工作，不要挣很多钱，不要有很多应酬，早点下班回家。有钱的时候小资一下，没钱的时候泡面也好。<p>面对未来，那是无边的锦绣前程——阳光、空气、雨露、花草树林……</p><p>谢谢你看到这里呀，谢谢你认识我！</p>";
+    function getMsg(){
+     return msg;
+    }
+    typeWriter.msg = getMsg(msg);
+    typeWriter.type();
+   }
+			
+			</script>
+</body>
+</html>

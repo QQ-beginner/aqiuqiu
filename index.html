@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <meta name="description" content="裘虬的个人网站主页">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<title>裘虬的个人网页</title>
+	<style>
+		body{
+			margin: 0px;
+		
+			
+		}
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin:0px;
+			background-color:#A4A2BD;
+			position: fixed;
+			width: 100%;
+			overflow: hidden;
+			top: 0;
+			margin: 50px 0px;
+			opacity: 0.8;
+			z-index: 5;
+				
+			
+		}
+		li{
+			width: 20%;
+			 
+			float: left;
+				
+		}
+		li a{
+			display: block;
+			color: white;
+			padding: 8px 10px;
+			text-decoration: none;
+			text-align: center;
+			
+		}
+		
+}
+		
+		li:last-child{
+		
+			border-right: none;
+		}
+		li a:hover{
+			background-color: aliceblue;
+			color: black;
+		}
+		
+		#div{
+			background-color:white;
+			height: 1000px;
+			
+		}
+		.div1{
+			margin: 0px;
+			padding: 0px 2px;
+			position: fixed;
+			z-index: 6;
+		}
+		span{
+			float: right;
+		}
+		.clock{
+			width: 20px;
+			height: 20px;
+		}
+		.house{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 100px;
+		}
+		.ok{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.lihua{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.train{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.see{
+			width: 20px;
+			height: 20px;
+			float: left;
+			position: relative;
+			top: 10px;left: 90px;
+		}
+		.iframe1{
+			width: 100%;
+			height: 600px;
+			
+			display: block;
+			position: relative;
+			top: 85px;
+		}
+		.pic1{
+			display: inline;
+			position: relative;
+			left: 75px;
+			top: 100px;
+		}
+		.pic2{
+			display: inline-block;
+			float: right;
+			position: relative;
+			right: 50px;
+			top: 5px;
+			
+		}
+		.welcome{
+			
+			text-align: center;
+			position: relative;
+			bottom:400px;
+		}
+		.name{
+			display: block;
+		}
+		h1{
+			
+			color: #3B3A3A;
+		}
+		 /*  给body设置高度，确保出现滚动条*/
+	    body{
+		    height: 1000px;
+	    }
+	   #btn{
+		   position:fixed;bottom:300px;right: 20px;display: none;
+		z-index: 1;}
+		.wechat{
+			width: 30px;
+			position: fixed;
+			bottom: 300px;
+			margin: 5px;
+			z-index: 1;
+		}
+		.wechat:hover{
+			content: url("二维码.png");
+			width: 90px;
+		}
+			.grid-container{
+				position: relative;
+				top: -20px;
+			display: grid;
+			width: 100%;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-rows: 400px 50px 300px;
+			padding: 10px;
+		}
+		.grid-item{
+		
+			text-align: center;
+		}
+		.grid-item1{
+			border-right: 1px solid #9F9EA3;
+		}
+		
+		.grid-item0{
+			grid-area:1 / 2 / span 1 / span 2 ;
+			border-right: 1px solid #9F9EA3;
+		}
+		.grid-item3{
+			grid-area: 2/1/span 2/span 2;
+			border-right: 1px solid #9F9EA3;
+			padding: 20px;
+		}
+		.grid-item4{
+			grid-area: 2/3/span 1/span 2;
+		}
+		.grid-itemx{
+			padding: 20px;
+		}
+		.mo{
+			position: relative;
+			top: -90px;
+			text-align: center;
+		}
+		hr{
+			margin: 50px;
+		}
+		.footer{
+			 clear: both;
+    display: block;
+    text-align: center;	
+    margin: 0px auto;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  
+			
+		}
+	</style>
+</head>
+
+<body>
+	<!--表头-->
+	<div id="div">
+	<div class="div1"><h3>球球的小屋｜个人网站       
+		
+		<span id="time"></span>  
+		<span>
+			<img src="小闹钟.png" class="clock"></span></div></h3>  
+	
+	<!--导航栏-->
+	<ul>
+		<li><img src="房子标志.png" class="house">
+			<a href="网页设计.html" target="_self">主页</a></li>
+		<li><img src="话筒.png" class="ok"><a class="active" href="个人简介.html" target="_self">个人介绍</a></li>
+		<li><img src="礼花.png" class="lihua"><a href="活动参与.html" target="_self"> 活动经历</a></li>
+		<li><img src="火车黑白.png" class="train"><a href="旅行.html" target="self"> 旅行</a></li>
+		<li><img src="望远镜.png" class="see"><a href="未来展望.html" target="_self"> 未来展望</a></li>
+	</ul>
+	<!--iframe-->
+	<div class="iframe1"><div class="pic1"><img src="照片一半.png" alt="" width="350px" height="500px"></div><div class="pic2"><img src="伞.png" width=300px height="500px"></div>
+		<div class="welcome">
+			<div class="name">
+			<h1 style="font-size: 55px;">你好<p>我是裘虬</p><p>欢迎有趣的灵魂</p></h1></div>
+		</div>
+		</div>
+	</div>
+	<input type="button" name="" id="btn" value="回到顶部" />
+		<img src="微信标志.jpeg" alt="" class="wechat">
+	<div class="mo"><h1>想要了解更多？你需要的都在这里</h1></div>
+	<div class="grid-container">
+  <div class="grid-item grid-item1"><h2>社交网络<p>744585510@qq.com</p><p>微博@小白的小傻子</p><p>知乎@小白的小傻子</p></h2></div>
+  <div class="grid-item grid-item0"><h2>日常Vlog</h2><span>观看地址：抖音、哔哩哔哩</span><video width="600px;" height="250px" controls>
+		<source src="vlog.mp4"type="video/mp4"></video></div>
+  <div class="grid-item"><h2>微信公众号订阅</h2>
+		<p><img src="二维码.png" width="100px;" height="100px;"></p>
+	  <p><h2>商务合作</h2></p><p><img src="二维码.png" width="100px;" height="100px;"></p>
+		</div>
+  <div class="grid-item grid-item3">
+	<h2>写留言</h2>
+	  <p>
+	  <textarea id="textarea" maxlength="100" name="message" rows="15" cols="55" style="border: 2px solid #B9B6EE">留下你想说的话呐～</textarea>
+	  <button onClick="messege()" id="doPost">完成留言</button>
+	  </p>
+	</div>  
+  <div class="grid-item grid-item4"><h2>留言板</h2></div>
+	<div class="grid-item"><div class="content"><div id="sendtext"><h3>每一位朋友的留言都会出现在这里哦</h3></div></div></div>
+  <div class="grid-item grid-itemx"><img src="心.JPG" width="300px" height="300px"></div>
+	
+	<hr align=center width=370% color=#987cb9 />
+	<div class="footer">designed and developed by Qiu Qiu</div>
+	</div>
+  
+  
+
+	
+	
+	
+	
+	<script type="text/javascript">
+	setInterval(function(){
+		var dd=new Date();
+		var h=dd.getHours();
+		var mi=dd.getMinutes();
+		var s=dd.getSeconds();
+		var str=h+":"+mi+":"+s+"&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+		document.getElementById("time").innerHTML=str;
+	},1000);//时间
+		var btn=document.getElementById('btn')
+		//window.onscroll实时获取滚动条滚动的距离
+		window.onscroll=function(){
+			var st=document.documentElement.scrollTop//距离顶部的距离（滚动条滚动的距离）
+			console.log(st)
+			if(st>300){
+				btn.style.display="block"
+			}else{
+				btn.style.display="none"
+			}
+		}
+		//点击按钮回到顶部
+		btn.onclick=function(){
+			document.documentElement.scrollTop=0
+		}
+		
+		window.onload = function(){
+		
+		var oMessageBox = document.getElementById("sendtext");
+		var oInput = document.getElementById("textarea");
+		var oPostBtn = document.getElementById("doPost");
+			
+			oPostBtn.onclick = function(){
+			if(oInput.value){
+				
+		//写入发表留言的时间
+				var oTime = document.createElement("div");
+				oTime.className = "time";
+				var myDate = new  Date();
+				oTime.innerHTML = myDate.toLocaleString();
+				oMessageBox.appendChild(oTime);
+				
+				//写入留言内容
+				var oMessageContent = document.createElement("div");
+				oMessageContent.className = "message_content";
+				oMessageContent.innerHTML = oInput.value;
+				oInput.value = "";
+				oMessageBox.appendChild(oMessageContent);
+			}
+			
+		}
+		
+	}
+	
+		function activ(){
+			
+		
+	var welcome=document.getElementsByClassName("welcome");
+		var name=document.getElementsByClassName("name").value;
+			welcome.display=none;
+		}
+		
+		
+	</script>
+</body>
+	
+	
+</html>
